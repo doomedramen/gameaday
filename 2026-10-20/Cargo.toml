@@ -1,0 +1,8 @@
+[package]
+name = "gameaday_2026_10_20"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+minifb = "0.28"
+rand = "0.8"
