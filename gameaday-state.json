@@ -3,7 +3,13 @@
   "last_game_date": "2026-10-20",
   "last_game_folder": "2026-10-20",
   "last_game_summary": "Brick Bounce - minimal breakout clone with paddle, ball, bricks, lives, win/lose states",
-  "last_feedback": {},
+  "last_feedback": {
+    "notes": "Simple but fun. Not clear how many lives left. When lost, random red line at top - unclear what it was. Ghosting/previous frame visible at all times.",
+    "fun": "good",
+    "visuals": "plain but ok, ghosting present",
+    "lives_ui": "missing",
+    "bugs": "red line on game over unclear, frame ghosting"
+  },
   "history": [
     {
       "date": "2026-10-20",
