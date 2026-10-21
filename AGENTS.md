@@ -112,6 +112,30 @@ the logic was separable from the engine.
 - If a dependency turns out to be a bad fit mid-build, abandon it early rather
   than fighting it all day.
 
+### Boilerplate / template repos (optional)
+These are starting points, not requirements. Using one, using a bare engine, or
+using no engine at all is entirely the agent's call for each game. Only reach for
+a template if it genuinely saves time for that day's game.
+
+Bevy templates:
+- https://github.com/TheBevyFlock/bevy_new_2d - opinionated 2D Bevy project
+  structure (screens, menus, theme, audio, asset tracking, dev tools) with CI/CD
+  and itch.io deploy. Scaffold with `bevy new my_game --template 2d`. MIT/CC0/Apache.
+- https://github.com/benfrankel/pyri_new_jam - builds on Bevy New 2D with
+  game-jam-oriented extras: more 3rd-party crates, bundled CC0 audio/fonts.
+  Scaffold with `bevy new game -t benfrankel/pyri_new_jam`. CC0/0BSD.
+- https://github.com/NiklasEi/bevy_game_template - Bevy template with out-of-box
+  builds for Windows, Linux, macOS, Web, Android and iOS, plus release workflows.
+  CC0. Heavier if you only need a native desktop build.
+
+Notes when using any template:
+- They assume Bevy, so they conflict with the "keep it light" advice above. Weigh
+  the minutes spent on a Bevy cold build against the time saved.
+- Templates bring their own structure and CI config; strip what you do not need
+  (especially GitHub workflow files, which do not belong in a dated game folder).
+- The architecture rule above still applies: keep the simulation pure and
+  headlessly testable regardless of what the template scaffolds.
+
 ## Constraints
 - Never modify previous games (read-only reference)
 - Focus on creating today's game fresh
