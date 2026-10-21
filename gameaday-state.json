@@ -1,20 +1,28 @@
 {
-  "day": 1,
-  "last_game_date": "2026-10-20",
-  "last_game_folder": "2026-10-20",
-  "last_game_summary": "Brick Bounce - minimal breakout clone with paddle, ball, bricks, lives, win/lose states",
+  "day": 2,
+  "last_game_date": "2026-10-21",
+  "last_game_folder": "2026-10-21",
+  "last_game_summary": "Nebula Drift - top-down arena survival shooter with momentum thrust and dash, 4 enemy types incl. a Warden boss every 5th wave, energy-orb charged screen-clearing pulse, combo multiplier, power-up drops (repair/rapid/charge), particle VFX, screen shake, procedural animated sprites, and dependency-free synth audio",
   "last_feedback": {
-    "notes": "Simple but fun. Not clear how many lives left. When lost, random red line at top - unclear what it was. Ghosting/previous frame visible at all times.",
-    "fun": "good",
-    "visuals": "plain but ok, ghosting present",
-    "lives_ui": "missing",
-    "bugs": "red line on game over unclear, frame ghosting"
+    "fun": "5-6, meh",
+    "visuals": "too plain",
+    "replayability": "medium",
+    "controls": "just right",
+    "gripe": "Yes, those three (missing lives UI, unclear red line on game over, frame ghosting)",
+    "wish": "something a bit bigger would be nice, maybe some animations, sprites, sound, etc"
   },
   "history": [
     {
       "date": "2026-10-20",
       "folder": "2026-10-20",
-      "summary": "Brick Bounce - minimal breakout clone with paddle, ball, bricks, lives, win/lose states"
+      "summary": "Brick Bounce - minimal breakout clone with paddle, ball, bricks, lives, win/lose states",
+      "model": "opencode/big-pickle"
+    },
+    {
+      "date": "2026-10-21",
+      "folder": "2026-10-21",
+      "summary": "Nebula Drift - top-down arena survival shooter with momentum thrust and dash, 4 enemy types incl. a Warden boss every 5th wave, energy-orb charged screen-clearing pulse, combo multiplier, power-up drops (repair/rapid/charge), particle VFX, screen shake, procedural animated sprites, and dependency-free synth audio",
+      "model": "opencode/big-pickle"
     }
   ]
 }

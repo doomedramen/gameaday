@@ -32,8 +32,8 @@ When user says "make todays game" (or similar):
   - day becomes 1
   - last_game_date = today's date
   - last_game_folder = "YYYY-MM-DD"
-  - add entry to history with summary
-- Report: game complete, location, brief description (without spoiling unnecessarily)
+  - add entry to history with summary AND model (MANDATORY - record provider/model or model name used)
+- Report: game complete, location, brief description (without spoiling unnecessarily), and model used
 
 ### Subsequent Days (>1)
 1. Ask feedback about previous game in conversational form. Questions:
@@ -61,10 +61,12 @@ When user says "make todays game" (or similar):
   "last_game_summary": string | null,
   "last_feedback": {},
   "history": [
-    {"date": "YYYY-MM-DD", "folder": "YYYY-MM-DD", "summary": "..."}
+    {"date": "YYYY-MM-DD", "folder": "YYYY-MM-DD", "summary": "...", "model": "provider/model or name used"}
   ]
 }
 ```
+
+**MANDATORY**: When creating/updating a game, record the model used (provider/model ID if available, or name). Add `"model": "..."` to history entry and optionally to game folder metadata.
 
 ## Constraints
 - Never modify previous games (read-only reference)

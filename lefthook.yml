@@ -1,0 +1,21 @@
+# lefthook configuration for GameADay.
+#
+# pre-commit : fast checks on the game project(s) touched by the commit.
+# pre-push   : full test suite (incl. binary e2e) + release build, plus repo
+#              state validation.
+#
+# Install/verify with:  lefthook install  &&  lefthook run pre-commit
+
+min_version: 1.5.0
+
+pre-commit:
+  parallel: false
+  commands:
+    rust-checks:
+      run: scripts/pre-commit.sh
+
+pre-push:
+  parallel: false
+  commands:
+    full-gate:
+      run: scripts/pre-push.sh

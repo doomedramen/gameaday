@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-21",
+  "folder": "2026-10-21",
+  "day": 2,
+  "title": "Nebula Drift",
+  "summary": "Nebula Drift - top-down arena survival shooter with momentum thrust and dash, 4 enemy types incl. a boss every 5th wave, energy-orb charged screen-clearing pulse, combo multiplier, power-up drops (repair/rapid/charge), particle VFX, screen shake, procedural animated sprites, and dependency-free synth audio",
+  "model": "opencode/big-pickle",
+  "genre": "top-down arena survival shooter",
+  "controls": "WASD/arrows thrust, mouse aim, left click/Space fire, Shift/RMB dash, E/MMB energy pulse, Enter/Space start-restart, Esc quit",
+  "dependencies": ["minifb", "rand"],
+  "audio": "pre-rendered WAV synth clips played via macOS afplay (no audio crates)",
+  "tests": {
+    "logic": "src/lib.rs + tests/game.rs (21 integration tests)",
+    "units": "src/render.rs + src/audio.rs (11 unit tests)",
+    "e2e": "tests/binary_e2e.rs runs the shipped binary with --selftest (headless sim + render for 400 simulated seconds)"
+  },
+  "learnings_from_previous_day": [
+    "added a clear on-screen lives/health UI (previous game had none)",
+    "the 'unexplained red line' is replaced by a clearly framed cyan arena border",
+    "frame ghosting fixed by fully clearing the framebuffer every frame (asserted in tests)"
+  ]
+}
