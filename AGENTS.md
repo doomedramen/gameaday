@@ -12,6 +12,8 @@ This project runs "GameADay" - an AI makes a game every day. When the user says 
 - Fully autonomous after initial review (feedback) - no further user input during development
 - Surprise to player - do not show unfinished details unnecessarily
 - Different AI may run each day - read/write state from repo files
+- **Try to make a BETTER game than yesterday.** Increase complexity/ambition each day - more systems, polish, mechanics. Push scope gradually but meaningfully.
+- **Require more development effort each day.** Don't regress to simpler games; build on learnings and level up.
 
 ## Flow
 
