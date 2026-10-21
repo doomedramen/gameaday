@@ -68,6 +68,50 @@ When user says "make todays game" (or similar):
 
 **MANDATORY**: When creating/updating a game, record the model used (provider/model ID if available, or name). Add `"model": "..."` to history entry and optionally to game folder metadata.
 
+## Engine Guidance
+
+Pick deliberately, not by habit. There is no required engine - choose per game and
+record the choice in `game/<that day's>game.json`.
+
+Network access to crates.io works; do not run cargo with `--offline` unless you
+actually want to be limited to the small local cache.
+
+### Options
+- **macroquad** - recommended default when the game needs a window, sprites,
+  text, or audio. Small dependency tree, fast compiles, built-in text/shape/audio
+  drawing. Good for arcade, action, and 2D games.
+- **bevy** - heavyweight ECS engine. Powerful, but cold builds take minutes and a
+  version bump or dep conflict can consume an entire day's budget. Only pick it
+  when the game genuinely needs large-scale ECS/systems machinery.
+- **hand-rolled framebuffer (`minifb`)** - what day 2 used. Total control,
+  minimal deps, but you pay for a software rasterizer, pixel font, and audio
+  plumbing. Fine for pixel-art games; a poor use of effort for anything else.
+- **no engine at all** - correct for pure-logic games (chess, puzzles, card
+  games, roguelike deckbuilders, simulations). Just a library plus a thin
+  renderer.
+
+### Architecture rule (applies to every game, engine or not)
+Keep the simulation pure and engine-free so it stays testable headlessly:
+
+- `src/lib.rs` - all game logic, with no engine types in its public API.
+  Rendering, input, and audio must not leak into it.
+- `src/main.rs` - a thin adapter: reads input, steps the simulation, draws it,
+  plays sound. Talks to the engine; the engine does not leak into `lib.rs`.
+- Provide a headless mode (e.g. `--selftest`) that runs the simulation for a
+  long simulated session without opening a window, and have an integration test
+  drive the shipped binary through it.
+
+This is what makes the e2e gate possible. Day 2's e2e test drove the real binary
+headlessly through a boss wave, a death, and a restart - that only works because
+the logic was separable from the engine.
+
+### Verify, don't assume
+- Confirm the crate actually resolves and builds *before* committing to it for
+  the day. Do a throwaway build first.
+- Prefer the newest stable release; check the version rather than assuming.
+- If a dependency turns out to be a bad fit mid-build, abandon it early rather
+  than fighting it all day.
+
 ## Constraints
 - Never modify previous games (read-only reference)
 - Focus on creating today's game fresh
