@@ -44,3 +44,5 @@ When user says "make todays game" (or similar), follow this procedure.
 - Game is surprise to player
 - Different AI each day - state must be in repo files
 - Day 1 must be simple/minimal
+- **Always try to beat yesterday** - make a better, more advanced game each day with more systems/polish
+- **Increasing ambition** - each day's game should require more development effort than previous day's game
