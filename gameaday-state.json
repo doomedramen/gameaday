@@ -156,7 +156,16 @@
         "threat-preview",
         "autopilot-playtest"
       ],
-      "feedback": {}
+      "feedback": {
+        "overall": "7/10 - very fun, will replay and share with friends; not my normal type of game",
+        "fun": "7/10 overall; figuring out the lantern lighting mechanic was cool",
+        "visuals": "loved the art style",
+        "replayability": "will be playing it again and sharing with friends; reached island 3",
+        "controls": "movement felt tricky - easy to get stuck in one place",
+        "gripe": "movement tricky, easy to get stuck in one place",
+        "wish": "",
+        "liked": "lantern/lighting mechanic, having music, art style"
+      }
     }
   ]
 }

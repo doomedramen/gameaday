@@ -14,6 +14,12 @@ delete lessons that still hold.
   target needs heavier sound, shake and flash than a trash mob. (day 2: boss
   hits sounded too light)
 
+- A core mechanic the player *discovers* (an "aha" moment) is memorable. Day
+  3's lighting/shroud system was the highlight. Give each game one systemic
+  idea the player can figure out and use cleverly.
+- Music matters. Day 3's adaptive score was explicitly loved, so every game
+  should have real music, not just sound effects.
+
 ## Abilities & challenge
 - Movement or defensive abilities need a clear, readable defensive payoff
   (e.g. i-frames, passing through threats). If an ability exists, design the
@@ -23,6 +29,15 @@ delete lessons that still hold.
   dashing)
 - Most of the roster should be a real threat. If only 2 of 4 enemy types
   matter, the others are filler. (day 2)
+
+## Movement & controls
+- Movement must feel free and readable. On day 3 it felt "tricky, easy to get
+  stuck in one place": cramped islands, height steps and blocking units made
+  reachable tiles hard to predict. Be generous with movement range, keep maps
+  open, and make it obvious *why* a tile can't be reached.
+- Design for players outside the genre. Day 3 scored 7/10 from someone for
+  whom tactics isn't their usual kind of game. Onboarding, previews and
+  forgiving early levels carry a lot of weight.
 
 ## Longevity & progression
 - Players get bored around 15-20 minutes without anything new. Plan for new
@@ -36,6 +51,8 @@ delete lessons that still hold.
 ## Scope & ambition
 - "Bigger" was the explicit wish after day 1: animation, sprites, sound and
   more content. Plain shapes on black are below the bar.
+- Day 3's art direction (lit isometric islands, glow, biome palettes) was
+  loved. That is the visual bar now.
 - Visuals were the weakest-rated axis on day 2 (4-6). Spend real effort on art
   direction: a coherent palette, lighting/glow, animated backgrounds, UI
   framing and typography.
