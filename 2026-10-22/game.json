@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-22",
+  "folder": "2026-10-22",
+  "day": 3,
+  "title": "Lanternfall",
+  "summary": "Lanternfall - turn-based tactics roguelite on procedurally generated floating isometric islands: 3-hero squad vs 6 enemy types and the Hollow King, light/shroud system with per-pixel dynamic lighting, shoves into the void, tactical AI, 7-island run with upgrade drafts and route choice, 5 biomes, adaptive synth score, tutorial, undo, persistent save",
+  "model": "anthropic/claude-opus-5-5",
+  "genre": "tactics",
+  "controls": "Mouse to select/move/target, 1-3 abilities, Tab cycle, U undo, D danger zones, Space end turn, Esc cancel, H help, M mute",
+  "dependencies": ["minifb", "cpal", "png", "font8x8"],
+  "audio": "real-time synthesiser via cpal: parametric SFX voices, procedural 4-layer score that follows battle intensity, stereo delay",
+  "tests": {
+    "unit": "17 tests in src/ (rng, map gen over 300 seeds, save, run, canvas, audio)",
+    "rules": "tests/game.rs (18 scenario tests)",
+    "e2e": "tests/binary_e2e.rs runs the shipped binary --selftest (16 autopilot runs + full app driven by synthetic input to victory) and --screenshot"
+  },
+  "learnings_from_previous_day": [
+    "focus axis was visuals: per-pixel lighting, floating-island cliffs, parallax sky, five biome palettes",
+    "abilities have a readable defensive payoff (Bulwark, undo, danger overlay)",
+    "the boss cannot be cheesed: it can't be shoved, and its aura cancels lantern light",
+    "new content keeps arriving: new enemy types on islands 2-4, elites, a new biome every island, the boss on 7",
+    "replay comes from choices: an upgrade draft and a route choice after every island"
+  ]
+}

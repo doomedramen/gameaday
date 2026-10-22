@@ -1,5 +1,5 @@
 {
-  "day": 2,
+  "day": 3,
   "history": [
     {
       "date": "2026-10-20",
@@ -16,9 +16,15 @@
         "structure": "single-board",
         "win_condition": "clear-board"
       },
-      "capabilities": ["core-loop", "win-lose-states"],
+      "capabilities": [
+        "core-loop",
+        "win-lose-states"
+      ],
       "not_applicable": {},
-      "firsts": ["core-loop", "win-lose-states"],
+      "firsts": [
+        "core-loop",
+        "win-lose-states"
+      ],
       "feedback": {
         "fun": "5-6, meh",
         "visuals": "too plain",
@@ -88,6 +94,69 @@
         "gripe": "Only the fast small yellow enemies (Darters) and the boss were a real threat, and the boss could be trivially avoided by dashing. Dash should grant i-frames and should not collide with enemies you dash through/past. Some sounds felt off - boss hit sounds were too light. Biggest structural gripe: by wave 21 there was nothing new and no progression; difficulty needed to ramp faster and the game needed a roguelite-style upgrade system to stay enjoyable long term.",
         "wish": "Dash i-frames + phase-through, punchier/harder-hitting boss hit audio, faster difficulty ramp, roguelite progression/upgrades for long-term replay"
       }
+    },
+    {
+      "date": "2026-10-22",
+      "folder": "2026-10-22",
+      "title": "Lanternfall",
+      "summary": "Lanternfall - turn-based tactics roguelite on procedurally generated floating isometric islands: 3-hero squad vs 6 enemy types and the Hollow King, light/shroud system with per-pixel dynamic lighting, shoves into the void, tactical AI, 7-island run with upgrade drafts and route choice, 5 biomes, adaptive synth score, tutorial, undo, persistent save",
+      "model": "anthropic/claude-opus-5-5",
+      "tags": {
+        "genre": "tactics",
+        "core_verb": "command",
+        "perspective": "isometric",
+        "pacing": "turn-based",
+        "input": "keyboard+mouse",
+        "structure": "run-based-roguelite",
+        "win_condition": "defeat-opponent"
+      },
+      "capabilities": [
+        "core-loop",
+        "win-lose-states",
+        "health-lives-ui",
+        "title-screen",
+        "session-best-score",
+        "multiple-enemy-or-piece-types",
+        "boss-or-climax",
+        "difficulty-progression",
+        "pickups-or-powerups",
+        "combo-or-chain-scoring",
+        "particles-vfx",
+        "screen-shake-juice",
+        "animated-sprites",
+        "parallax-or-layered-background",
+        "synth-audio-sfx",
+        "headless-selftest",
+        "screenshot-mode",
+        "procedural-level-generation",
+        "tactical-ai-opponent",
+        "persistent-save-file",
+        "in-run-upgrade-draft",
+        "route-choice",
+        "multiple-biomes",
+        "dynamic-lighting",
+        "adaptive-music",
+        "tutorial-onboarding",
+        "undo-move",
+        "threat-preview",
+        "autopilot-playtest"
+      ],
+      "not_applicable": {},
+      "firsts": [
+        "procedural-level-generation",
+        "tactical-ai-opponent",
+        "persistent-save-file",
+        "in-run-upgrade-draft",
+        "route-choice",
+        "multiple-biomes",
+        "dynamic-lighting",
+        "adaptive-music",
+        "tutorial-onboarding",
+        "undo-move",
+        "threat-preview",
+        "autopilot-playtest"
+      ],
+      "feedback": {}
     }
   ]
 }

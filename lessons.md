@@ -39,3 +39,14 @@ delete lessons that still hold.
 - Visuals were the weakest-rated axis on day 2 (4-6). Spend real effort on art
   direction: a coherent palette, lighting/glow, animated backgrounds, UI
   framing and typography.
+
+## Process
+- Balance with a headless bot before trusting your instincts. On day 3 it
+  found endless stalemates (a lone healer could out-heal the damage) and one
+  enemy type dealing half of all damage. Every session needs a hard stalemate
+  breaker, and a test that every battle ends.
+- AI that moves towards targets must use real path distance, not straight-line
+  distance, or units get stuck behind water and walls. (day 3)
+- Look at the screenshots at the true resolution. Dark biomes that look moody
+  in your head can be unreadable on screen. (day 3: the boss island was nearly
+  black)
