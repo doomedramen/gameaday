@@ -3,14 +3,7 @@
   "last_game_date": "2026-10-21",
   "last_game_folder": "2026-10-21",
   "last_game_summary": "Nebula Drift - top-down arena survival shooter with momentum thrust and dash, 4 enemy types incl. a Warden boss every 5th wave, energy-orb charged screen-clearing pulse, combo multiplier, power-up drops (repair/rapid/charge), particle VFX, screen shake, procedural animated sprites, and dependency-free synth audio",
-  "last_feedback": {
-    "fun": "7-8, fun",
-    "visuals": "4-6, okay",
-    "replayability": "7-8, yes - replayed to wave 21 before boredom set in",
-    "controls": "7-8, good",
-    "gripe": "Only the fast small yellow enemies (Darters) and the boss were a real threat, and the boss could be trivially avoided by dashing. Dash should grant i-frames and should not collide with enemies you dash through/past. Some sounds felt off - boss hit sounds were too light. Biggest structural gripe: by wave 21 there was nothing new and no progression; difficulty needed to ramp faster and the game needed a roguelite-style upgrade system to stay enjoyable long term.",
-    "wish": "Dash i-frames + phase-through, punchier/harder-hitting boss hit audio, faster difficulty ramp, roguelite progression/upgrades for long-term replay"
-  },
+  "last_feedback": {},
   "history": [
     {
       "date": "2026-10-20",
