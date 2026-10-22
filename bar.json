@@ -1,0 +1,25 @@
+{
+  "_doc": "The ratchet. Every capability any game has shipped. Each new game must list every id here in its history[].capabilities, or explain in history[].not_applicable why it does not fit the genre. It must also add at least rules.min_new_firsts brand-new capabilities (added here with first_date = that game's date). Never remove entries. Enforced by scripts/check-state.py.",
+  "rules": {
+    "min_new_firsts": 2
+  },
+  "capabilities": {
+    "core-loop": { "first_date": "2026-10-20", "description": "complete playable loop with input, simulation and rendering" },
+    "win-lose-states": { "first_date": "2026-10-20", "description": "clear end states the player understands, with restart" },
+    "health-lives-ui": { "first_date": "2026-10-21", "description": "on-screen HUD showing player resources (lives/health/etc.)" },
+    "title-screen": { "first_date": "2026-10-21", "description": "title/menu screen with controls shown before play" },
+    "session-best-score": { "first_date": "2026-10-21", "description": "best score or best result shown across rounds" },
+    "multiple-enemy-or-piece-types": { "first_date": "2026-10-21", "description": "4+ distinct entity/piece types with different behaviour" },
+    "boss-or-climax": { "first_date": "2026-10-21", "description": "a distinct climax encounter or set piece beyond the normal loop" },
+    "difficulty-progression": { "first_date": "2026-10-21", "description": "difficulty escalates over a session" },
+    "pickups-or-powerups": { "first_date": "2026-10-21", "description": "temporary or permanent modifiers the player acquires" },
+    "combo-or-chain-scoring": { "first_date": "2026-10-21", "description": "scoring that rewards skilful chaining" },
+    "particles-vfx": { "first_date": "2026-10-21", "description": "particle effects on key events" },
+    "screen-shake-juice": { "first_date": "2026-10-21", "description": "screen shake, flashes, knockback or similar game feel" },
+    "animated-sprites": { "first_date": "2026-10-21", "description": "animated sprites (procedural or authored), not static shapes" },
+    "parallax-or-layered-background": { "first_date": "2026-10-21", "description": "layered or animated background art" },
+    "synth-audio-sfx": { "first_date": "2026-10-21", "description": "sound effects on key events" },
+    "headless-selftest": { "first_date": "2026-10-21", "description": "--selftest headless run driven by an integration test against the shipped binary" },
+    "screenshot-mode": { "first_date": "2026-10-21", "description": "--screenshot <dir> renders representative frames to PNG" }
+  }
+}

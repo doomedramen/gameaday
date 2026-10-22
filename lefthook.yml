@@ -1,6 +1,7 @@
 # lefthook configuration for GameADay.
 #
-# pre-commit : fast checks on the game project(s) touched by the commit.
+# pre-commit : fast checks on the game project(s) touched by the commit, plus
+#              state validation when state/novelty/bar files are staged.
 # pre-push   : full test suite (incl. binary e2e) + release build, plus repo
 #              state validation.
 #
@@ -13,6 +14,9 @@ pre-commit:
   commands:
     rust-checks:
       run: scripts/pre-commit.sh
+    state-checks:
+      glob: "{gameaday-state.json,novelty.json,bar.json}"
+      run: python3 scripts/check-state.py
 
 pre-push:
   parallel: false

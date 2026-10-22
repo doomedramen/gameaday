@@ -5,8 +5,8 @@
 #   1. cargo test --release   (logic + unit tests + the binary e2e selftest)
 #   2. cargo build --release  (the game must actually build shippable)
 #
-# Also sanity-checks repo state: gameaday-state.json must be valid JSON and
-# must list every game folder that exists.
+# Also validates repo state via check-state.py (state schema, novelty rules,
+# capability ratchet, PITCH/REVIEW/screenshots deliverables).
 
 set -euo pipefail
 
@@ -18,27 +18,8 @@ root="$(repo_root)"
 status=0
 
 # ---- state file checks -----------------------------------------------------
-state="$root/gameaday-state.json"
-if [[ -f "$state" ]]; then
-  if ! python3 -c "import json,sys; json.load(open('$state'))" 2>/dev/null; then
-    echo "[pre-push] FAIL: gameaday-state.json is not valid JSON" >&2
-    status=1
-  else
-    missing=""
-    while IFS= read -r game; do
-      [[ -z "$game" ]] && continue
-      base="$(basename "$game")"
-      if ! grep -q "\"$base\"" "$state"; then
-        missing="$missing $base"
-      fi
-    done < <(all_games)
-    if [[ -n "$missing" ]]; then
-      echo "[pre-push] FAIL: gameaday-state.json does not mention game folder(s):$missing" >&2
-      status=1
-    fi
-  fi
-else
-  echo "[pre-push] FAIL: gameaday-state.json is missing" >&2
+# State, novelty cooldowns, the capability ratchet and per-game deliverables.
+if ! python3 "$here/check-state.py" "$root"; then
   status=1
 fi
 
