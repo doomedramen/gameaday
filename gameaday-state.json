@@ -1,5 +1,5 @@
 {
-  "day": 3,
+  "day": 4,
   "history": [
     {
       "date": "2026-10-20",
@@ -166,6 +166,66 @@
         "wish": "",
         "liked": "lantern/lighting mechanic, having music, art style"
       }
+    },
+    {
+      "date": "2026-10-23",
+      "folder": "2026-10-23",
+      "title": "Night Signal",
+      "summary": "Night Signal - a 14-night radio station management game about matching broadcasts to neighborhood needs, routing power across relay networks, and balancing audience with trust",
+      "model": "openai/gpt-6",
+      "tags": {
+        "genre": "management-tycoon",
+        "core_verb": "manage",
+        "perspective": "top-down",
+        "pacing": "turn-based",
+        "input": "mouse-only",
+        "structure": "campaign-meta",
+        "win_condition": "build-target"
+      },
+      "capabilities": [
+        "core-loop",
+        "win-lose-states",
+        "health-lives-ui",
+        "title-screen",
+        "session-best-score",
+        "difficulty-progression",
+        "combo-or-chain-scoring",
+        "parallax-or-layered-background",
+        "headless-selftest",
+        "screenshot-mode",
+        "broadcast-programming",
+        "power-grid-allocation",
+        "persistent-campaign-upgrades",
+        "community-trust-network",
+        "synth-audio-sfx",
+        "adaptive-music"
+      ],
+      "not_applicable": {
+        "multiple-enemy-or-piece-types": "There are no enemies or battle pieces; broadcast programs and districts are not combat units.",
+        "boss-or-climax": "There is a campaign finale but no distinct boss/climax encounter beyond the last broadcast.",
+        "pickups-or-powerups": "Funds and upgrades are part of the station economy, not acquired drops or temporary pickups.",
+        "particles-vfx": "The current renderer uses static signal lines and does not render particles.",
+        "screen-shake-juice": "The current renderer does not animate camera shake or impact effects.",
+        "animated-sprites": "The districts and skyline are static pixel illustrations without animated characters.",
+        "procedural-level-generation": "The city map uses fixed district locations; only district needs are seeded.",
+        "tactical-ai-opponent": "No combat encounters, movable pieces, destructible map props or pickup drops exist in this broadcast management game.",
+        "persistent-save-file": "Scores and upgrades are kept for a campaign only; there is no between-session save.",
+        "route-choice": "The campaign follows a fixed 14-night sequence without branching routes.",
+        "multiple-biomes": "All districts belong to one city and share its blackout conditions.",
+        "dynamic-lighting": "The broadcast network uses signal lines and has no light simulation.",
+        "tutorial-onboarding": "The title screen lists controls, but no guided in-game tutorial or help screen is included.",
+        "undo-move": "A committed broadcast is the current night and cannot be undone.",
+        "threat-preview": "The city calendar has periodic outages but no tactical enemies whose next actions need previewing.",
+        "autopilot-playtest": "The selftest directly drives the rules but does not run a general campaign-playing bot.",
+        "in-run-upgrade-draft": "There is a direct station-upgrade purchase, not a pick-one-of-N draft."
+      },
+      "firsts": [
+        "broadcast-programming",
+        "power-grid-allocation",
+        "persistent-campaign-upgrades",
+        "community-trust-network"
+      ],
+      "feedback": {}
     }
   ]
 }

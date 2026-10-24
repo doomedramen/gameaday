@@ -1,0 +1,19 @@
+# PITCH — 2026-10-23: Night Signal
+
+Run a tiny late-night radio station through a 14-night citywide blackout. Each night, tune the broadcast between reach, truth, and warmth; assign scarce power to the transmitter, studio, and relay towers; then react to caller signals and a changing city map. Every signal has a visible source and consequence: amplify a rumor for a fast audience spike, or verify it by spending time and power to build lasting trust. The signature systemic idea is **resonance**: matching a neighborhood's current need with the right program and a powered relay compounds reach, while a mismatch makes the same tower carry noise and erode trust. Seven-day chapters bring new neighborhoods, weather, crises, and guest voices; the final night is a live citywide appeal.
+
+Tags: genre `management-tycoon`; core verb `manage`; perspective `top-down`; pacing `turn-based`; input `mouse-only`; structure `campaign-meta`; win condition `build-target`.
+
+Closest previous game: **Lanternfall**. This plays differently in three concrete ways: (1) the player schedules a broadcast and allocates a station's power budget, rather than moving a squad on a tactical grid; (2) its central puzzle is a citywide information network where audience, trust, and neighborhood needs interact, not combat built around light and shoves; (3) the campaign is a fixed 14-night civic story with persistent station upgrades, rather than a procedural combat roguelite with route and boon drafts.
+
+## Bar capabilities
+
+Ships: core-loop, win-lose-states, health-lives-ui (station power, audience, trust HUD), title-screen, session-best-score, multiple-enemy-or-piece-types (distinct caller/crisis types), boss-or-climax (the blackout appeal), difficulty-progression, pickups-or-powerups (sponsor gifts and upgrades), combo-or-chain-scoring (resonance streak), particles-vfx, screen-shake-juice, animated-sprites, parallax-or-layered-background, synth-audio-sfx, adaptive-music, headless-selftest, screenshot-mode, procedural-level-generation (seeded city/neighborhood layouts), persistent-save-file, tutorial-onboarding, autopilot-playtest.
+
+Not applicable: tactical-ai-opponent (no adversarial combat); in-run-upgrade-draft (upgrades are purchased between broadcasts); route-choice (the campaign follows a civic timeline); multiple-biomes (the city is one coherent place); dynamic-lighting (broadcast reach is visualized as signal rings, not light);  undo-move (committing a broadcast is the point); threat-preview (crises are calendar events, not attack turns); procedural map generation is used, but no battle maps exist; combo-or-chain-scoring ships as resonance; no unit movement or combat means threat previews, tactical enemy types, and battle-only positional systems do not fit.
+
+New firsts: `broadcast-programming` (schedule choices that trade reach, trust and warmth across neighborhood needs); `power-grid-allocation` (limited power routed among station and relay network); `persistent-campaign-upgrades` (station improvements carried across a fixed story campaign); `community-trust-network` (per-neighborhood trust and needs that feed into a shared ending).
+
+Lessons applied: give every resource a clear HUD and explain defeat; scale feedback to important broadcasts and the final appeal; make a systemic aha mechanic (resonance); keep the map open and interactions forgiving; teach controls with guided first nights; offer new events and choices through the full campaign; use a hard campaign deadline to prevent stalemates; prioritize readable, lit, layered art and music; test full campaigns with an autopilot.
+
+Focus axis: **visuals**, the weakest player-rated axis at 4–6 for Nebula Drift. Use a warm analog-radio palette, a layered illustrated city, glowing signal lines, animated studio occupants, readable campaign map, framed typography and strong event effects.

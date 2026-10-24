@@ -119,6 +119,22 @@
     "autopilot-playtest": {
       "first_date": "2026-10-22",
       "description": "a bot plays full sessions headlessly and tests assert on pacing/balance"
+    },
+    "broadcast-programming": {
+      "first_date": "2026-10-23",
+      "description": "player schedules from several broadcasts with distinct reach, trust and warmth effects"
+    },
+    "power-grid-allocation": {
+      "first_date": "2026-10-23",
+      "description": "limited operating power can be routed among station functions and relay coverage"
+    },
+    "persistent-campaign-upgrades": {
+      "first_date": "2026-10-23",
+      "description": "station improvements purchased between broadcasts persist through a campaign"
+    },
+    "community-trust-network": {
+      "first_date": "2026-10-23",
+      "description": "per-neighborhood trust and needs combine into the campaign outcome"
     }
   }
 }
