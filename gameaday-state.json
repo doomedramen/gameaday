@@ -1,5 +1,5 @@
 {
-  "day": 4,
+  "day": 5,
   "history": [
     {
       "date": "2026-10-20",
@@ -224,6 +224,70 @@
         "power-grid-allocation",
         "persistent-campaign-upgrades",
         "community-trust-network"
+      ],
+      "feedback": {}
+    },
+    {
+      "date": "2026-10-24",
+      "folder": "2026-10-24",
+      "title": "Cragswing",
+      "summary": "Cragswing - real-time rope-swinging platformer roguelite: five procedurally generated ascents plus the Stormheart boss, momentum that smashes glass and armour, hold-to-rewind time, 15 boons, route choice, Workshop perks, Heat levels, medals, adaptive music and a headless autopilot",
+      "model": "anthropic/claude-sonnet-5-5",
+      "tags": {
+        "genre": "platformer",
+        "core_verb": "swing",
+        "perspective": "side-view",
+        "pacing": "real-time",
+        "input": "keyboard+mouse",
+        "structure": "run-based-roguelite",
+        "win_condition": "reach-goal"
+      },
+      "capabilities": [
+        "core-loop",
+        "win-lose-states",
+        "health-lives-ui",
+        "title-screen",
+        "session-best-score",
+        "multiple-enemy-or-piece-types",
+        "boss-or-climax",
+        "difficulty-progression",
+        "pickups-or-powerups",
+        "combo-or-chain-scoring",
+        "particles-vfx",
+        "screen-shake-juice",
+        "animated-sprites",
+        "parallax-or-layered-background",
+        "synth-audio-sfx",
+        "headless-selftest",
+        "screenshot-mode",
+        "procedural-level-generation",
+        "tactical-ai-opponent",
+        "persistent-save-file",
+        "in-run-upgrade-draft",
+        "route-choice",
+        "multiple-biomes",
+        "dynamic-lighting",
+        "adaptive-music",
+        "tutorial-onboarding",
+        "undo-move",
+        "threat-preview",
+        "autopilot-playtest",
+        "persistent-campaign-upgrades",
+        "rope-physics-traversal",
+        "time-rewind",
+        "accessibility-assists",
+        "time-trial-medals"
+      ],
+      "not_applicable": {
+        "broadcast-programming": "Night Signal's radio scheduling has no analogue in a real-time platformer.",
+        "power-grid-allocation": "There is no station or power budget to route; resources here are hearts, Echo and speed.",
+        "community-trust-network": "No neighbourhood or trust system; progress is spatial and per-ascent."
+      },
+      "firsts": [
+        "rope-physics-traversal",
+        "time-rewind",
+        "accessibility-assists",
+        "time-trial-medals"
       ],
       "feedback": {}
     }

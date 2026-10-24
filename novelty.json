@@ -82,7 +82,8 @@
       "stack": "arrange pieces into stable or complete configurations",
       "navigate": "find a path through a space under pressure",
       "grow": "expand or evolve something over time",
-      "spell": "form words"
+      "spell": "form words",
+      "swing": "traverse by swinging on a rope or pendulum, converting momentum into movement"
     },
     "perspective": {
       "top-down": "2D viewed from above",

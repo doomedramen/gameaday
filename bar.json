@@ -135,6 +135,22 @@
     "community-trust-network": {
       "first_date": "2026-10-23",
       "description": "per-neighborhood trust and needs combine into the campaign outcome"
+    },
+    "rope-physics-traversal": {
+      "first_date": "2026-10-24",
+      "description": "movement built on rope/pendulum physics: hook, swing, pump, reel, release"
+    },
+    "time-rewind": {
+      "first_date": "2026-10-24",
+      "description": "hold-to-scrub rewind of the whole simulation with a limited resource"
+    },
+    "accessibility-assists": {
+      "first_date": "2026-10-24",
+      "description": "aim assist, game speed, invincible explorer mode and a pause menu to change them"
+    },
+    "time-trial-medals": {
+      "first_date": "2026-10-24",
+      "description": "par-time medals and persisted best times per level"
     }
   }
 }

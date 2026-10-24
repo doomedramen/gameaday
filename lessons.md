@@ -67,3 +67,16 @@ delete lessons that still hold.
 - Look at the screenshots at the true resolution. Dark biomes that look moody
   in your head can be unreadable on screen. (day 3: the boss island was nearly
   black)
+- A generator is only as good as its oracle. The autopilot that plays every
+  generated level (and plans by simulating ahead) found far more bugs than
+  hand-checking: gaps that were crossable only by luck, vault rooms with no
+  exit, hazards spawned inside rock. Build the bot first, then the content.
+  (day 5)
+- Sub-step collision loops that stop at a coarse step leave a gap above the
+  floor; a ground probe then fails and the player cannot jump. Refine to
+  contact, and treat the press frame of a button as held. (day 5)
+- Rewinding invites exploits: claim pickups once and keep the resource outside
+  the rewound state. (day 5)
+- Test harnesses that replay a bot through the real UI must honour hit-stop
+  and menus, or the bot's timing drifts and the failures look like game bugs.
+  (day 5)
