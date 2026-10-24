@@ -1887,7 +1887,7 @@ impl App {
             ("HOLD R / RIGHT CLICK", "REWIND time (uses Echo)"),
             ("ESC / P", "pause and assists"),
             ("M", "mute"),
-            ("FULL SCREEN", "green window button or Ctrl+Cmd+F"),
+            ("F / F11", "toggle full screen"),
         ];
         for (i, (k, d)) in left.iter().enumerate() {
             c.text_shadow(cx - 490.0, 120.0 + i as f32 * 30.0, k, 1.8, GOLD, 1.0);

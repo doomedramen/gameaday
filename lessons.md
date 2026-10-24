@@ -80,3 +80,23 @@ delete lessons that still hold.
 - Test harnesses that replay a bot through the real UI must honour hit-stop
   and menus, or the bot's timing drifts and the failures look like game bugs.
   (day 5)
+- Day 5 feedback (concept good, execution clunky). Distilled:
+  - A bot that clears a level is not evidence the moment-to-moment feel is
+    fun. Judge movement by how it feels to chain, not by solvability. Tests
+    that only prove "can be completed" miss clunk.
+  - Fast-movement games should reward flow: never make the player manage
+    fiddly inputs (rope length, re-aiming) mid-motion. Automate the chores and
+    let skill live in route, timing and momentum. Design for a speedrun.
+  - Run the simulation at exactly one tick per display frame on a fixed-rate
+    display (or interpolate renders). A free accumulator gives uneven ticks
+    that look like hitching, especially in run animations and the camera.
+  - Mechanics that are only a means to an end (wall jumps, patrolling foes)
+    need their own payoff and tension. A passive patroller that only blocks the
+    way is not fun; make foes react, rush and punish, and make every movement
+    verb feel good to chain on its own.
+  - Rewind or any undo must never remove all consequence. If wounds can be
+    undone the game cannot be lost. Keep undo scarce and let it forgive
+    positional mistakes, not damage.
+  - Mix every sound to a loudness target by class (quiet, normal, heavy), then
+    play by ear. Per-effect hand tuning left the volume all over the place.
+- Day 5 art feedback: the visuals were almost identical to day 3. Do not hand-draw every sprite with the same primitives and palette again. Start each game by choosing a distinct art direction and sourcing assets for it (itch.io, Kenney, OpenGameArt), then build gameplay around what the pack supports. (day 5)

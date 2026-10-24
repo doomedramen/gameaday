@@ -8,6 +8,8 @@ AI makes one game every day. When the user says "make todays game", follow the D
 ## Core Rules
 - **Rust only** - Self-contained Cargo project in `YYYY-MM-DD/` at repo root.
 - **Brand new every day** - Never iterate, tweak, or expand a previous game. Never modify previous games.
+- **Played games are frozen** - Once the user has played a game it is never changed, whatever the feedback says (fun, feel, balance, art). The only exception is a game-breaking bug (crash, unusable input or UI, unwinnable or softlocked), fixed minimally. Feedback goes to `history[].feedback` and `lessons.md` only.
+- **Fresh art every day** - Do not reuse the previous days' procedural look. Use third-party assets (itch.io, OpenGameArt, Kenney and similar packs; fonts, sprites, tilesets, audio) wherever they fit, and pick a different style from recent games. Check the licence allows redistribution, vendor the files into the game folder under `assets/`, and credit author, source URL and licence in the game's `README.md` and `assets/CREDITS.md`. Record the art style in `PITCH.md` and make sure it differs visibly from the last two games.
 - **Beat the best so far** - Not just yesterday: every game must be more impressive than the best game in `history[]`. More systems, more content, more polish, better feel.
 - **Never too similar** - Novelty rules in `novelty.json` are enforced by `scripts/check-state.py`.
 - **Ratchet, don't regress** - Every capability in `bar.json` ships again (or is explained as not applicable), plus at least 2 new ones.
@@ -34,6 +36,7 @@ AI makes one game every day. When the user says "make todays game", follow the D
    - which `bar.json` capabilities ship, which are not applicable (and why)
    - at least 2 new "firsts" (e.g. save file, tutorial, procedural generation, meta-progression, AI opponent, level editor, dynamic music, lighting, multiple biomes)
    - which `lessons.md` entries apply and how the design honours them
+   - art style and asset sources (must look different from the last two games; see Fresh art every day)
    - focus axis: the weakest-rated axis in recent feedback (fun / visuals / replayability / controls) gets extra effort
 4. **Build** in phases: playable core -> content -> dedicated polish pass. Polish checklist: juice on every key event, audio mix (important events loudest), onboarding/controls on screen, readable UI, clear end states, no dead time.
 5. **Test**

@@ -289,7 +289,15 @@
         "accessibility-assists",
         "time-trial-medals"
       ],
-      "feedback": {}
+      "feedback": {
+        "overall": "nice concept. poor execution. it is not fun, it is clunky",
+        "fun": "not fun, clunky; wall jumping is not fun; enemies are not fun",
+        "visuals": "",
+        "replayability": "the rewind feature means it is way too easy (you never die)",
+        "controls": "the walk animation seems to be buggy and feel like the player is hitching; having to adjust rope height slows things down (this is a game that would benefit from feeling like you need to speedrun it)",
+        "gripe": "sound volume is all over the place",
+        "wish": "a game that feels like you need to speedrun it"
+      }
     }
   ]
 }

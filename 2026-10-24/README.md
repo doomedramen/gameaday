@@ -33,7 +33,7 @@ Software-rendered at 1280x720 with real-time synthesised audio (CoreAudio via
 | **Rewind time** | hold `R` / right click (spends Echo) |
 | Pause, assists | `Esc` / `P` |
 | Help, mute | `H`, `M` |
-| Full screen | the window's green button / `Ctrl+Cmd+F` (the frame scales, keeping 16:9) |
+| Full screen | `F` or `F11` toggles a borderless full-screen window (16:9, letterboxed) |
 
 ## How it plays
 
