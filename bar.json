@@ -151,6 +151,30 @@
     "time-trial-medals": {
       "first_date": "2026-10-24",
       "description": "par-time medals and persisted best times per level"
+    },
+    "third-party-art-assets": {
+      "first_date": "2026-10-25",
+      "description": "the look is built from vendored, credited third-party asset packs (sprites, textures, fonts, sampled sounds)"
+    },
+    "vehicle-drift-physics": {
+      "first_date": "2026-10-25",
+      "description": "arcade vehicle model with grip limits, per-surface handling, handbrake drift and a tiered mini-turbo"
+    },
+    "slipstream-drafting": {
+      "first_date": "2026-10-25",
+      "description": "driving in another vehicle's wake tows you and charges a boost resource"
+    },
+    "ghost-replay": {
+      "first_date": "2026-10-25",
+      "description": "best laps are recorded, persisted and raced against as a ghost"
+    },
+    "minimap": {
+      "first_date": "2026-10-25",
+      "description": "live map of the whole level with every competitor"
+    },
+    "championship-standings": {
+      "first_date": "2026-10-25",
+      "description": "points table across a multi-event championship with qualifying targets"
     }
   }
 }

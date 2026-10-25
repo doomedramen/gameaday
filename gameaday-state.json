@@ -1,5 +1,5 @@
 {
-  "day": 5,
+  "day": 6,
   "history": [
     {
       "date": "2026-10-20",
@@ -298,6 +298,78 @@
         "gripe": "sound volume is all over the place",
         "wish": "a game that feels like you need to speedrun it"
       }
+    },
+    {
+      "date": "2026-10-25",
+      "folder": "2026-10-25",
+      "title": "Slipstream Cup",
+      "summary": "Slipstream Cup - top-down arcade racing championship on procedurally generated circuits: drift physics with tiered mini-turbos, slipstream that tows and charges nitro, seven rival personalities (incl. a ramming Bully and the Champion), five venues incl. a lit night city, route choice, parts draft, garage with undo, points table, Time Trial ghosts with AI-calibrated medals, adaptive music, Kenney CC0 art",
+      "model": "anthropic/claude-opus-5-5",
+      "tags": {
+        "genre": "racing",
+        "core_verb": "steer",
+        "perspective": "top-down",
+        "pacing": "real-time",
+        "input": "keyboard",
+        "structure": "campaign-meta",
+        "win_condition": "defeat-opponent"
+      },
+      "capabilities": [
+        "core-loop",
+        "win-lose-states",
+        "health-lives-ui",
+        "title-screen",
+        "session-best-score",
+        "multiple-enemy-or-piece-types",
+        "boss-or-climax",
+        "difficulty-progression",
+        "pickups-or-powerups",
+        "combo-or-chain-scoring",
+        "particles-vfx",
+        "screen-shake-juice",
+        "animated-sprites",
+        "parallax-or-layered-background",
+        "synth-audio-sfx",
+        "headless-selftest",
+        "screenshot-mode",
+        "procedural-level-generation",
+        "tactical-ai-opponent",
+        "persistent-save-file",
+        "in-run-upgrade-draft",
+        "route-choice",
+        "multiple-biomes",
+        "dynamic-lighting",
+        "adaptive-music",
+        "tutorial-onboarding",
+        "undo-move",
+        "threat-preview",
+        "autopilot-playtest",
+        "persistent-campaign-upgrades",
+        "accessibility-assists",
+        "time-trial-medals",
+        "third-party-art-assets",
+        "vehicle-drift-physics",
+        "slipstream-drafting",
+        "ghost-replay",
+        "minimap",
+        "championship-standings"
+      ],
+      "not_applicable": {
+        "broadcast-programming": "Night Signal's radio scheduling has no analogue in a racing game.",
+        "power-grid-allocation": "No station or power budget; the resources are nitro, damage and prize money.",
+        "community-trust-network": "No neighbourhoods or trust; standings are points from races.",
+        "rope-physics-traversal": "Cars, not ropes; movement is the vehicle model.",
+        "time-rewind": "Deliberately left out: lessons.md (day 5) says rewind removed all consequence. Mistakes stay; second chances are limited."
+      },
+      "firsts": [
+        "third-party-art-assets",
+        "vehicle-drift-physics",
+        "slipstream-drafting",
+        "ghost-replay",
+        "minimap",
+        "championship-standings"
+      ],
+      "feedback": {}
     }
   ]
 }
