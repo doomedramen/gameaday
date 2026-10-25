@@ -114,8 +114,10 @@ delete lessons that still hold.
   - Continuous synthesised sounds (engines, drones) easily sound harsh. Use a
     sampled loop from an asset pack, or keep the synth soft, low and filtered,
     and mix it well under effects and music.
-  - Full screen is expected. Make it real (native full screen or a
-    screen-sized window that actually fills the display), offer it in the
-    menus as well as on a key, and test the toggle.
+  - Full screen is expected, and players reach for the OS controls first.
+    Leave the window resizable so the macOS green maximise / full-screen
+    button works (scale the frame to the window, letterboxed), and also offer
+    full screen as a visible Settings and pause-menu option. A shortcut listed
+    only in a title-screen footer goes unnoticed.
 - Day 6 art feedback: sourcing a coherent third-party pack (Kenney) and
   building the look around it worked - "graphics were nice". Keep doing it.
