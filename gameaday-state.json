@@ -369,7 +369,14 @@
         "minimap",
         "championship-standings"
       ],
-      "feedback": {}
+      "feedback": {
+        "fun": "bad logic for the AI characters, they all drive off and i can never get even close to catching up, normally games like this have some sense of rubber banding.",
+        "visuals": "graphics were nice",
+        "replayability": "",
+        "controls": "hard to tell when the speed boosts or nitros as the ui was always blocking a lot of the screen.",
+        "gripe": "no full screen support; horrible engine sound",
+        "wish": "rubber banding so the AI can be caught; less screen covered by UI; full screen; a better engine sound"
+      }
     }
   ]
 }

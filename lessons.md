@@ -100,3 +100,22 @@ delete lessons that still hold.
   - Mix every sound to a loudness target by class (quiet, normal, heavy), then
     play by ear. Per-effect hand tuning left the volume all over the place.
 - Day 5 art feedback: the visuals were almost identical to day 3. Do not hand-draw every sprite with the same primitives and palette again. Start each game by choosing a distinct art direction and sourcing assets for it (itch.io, Kenney, OpenGameArt), then build gameplay around what the pack supports. (day 5)
+- Day 6 feedback (racing; graphics liked, AI uncatchable, HUD in the way,
+  engine sound horrible, no working full screen). Distilled:
+  - Tuning difficulty against your own autopilot overrates the player. A
+    human is much slower than the bot (assume 10-15%), so the first events
+    must be winnable by a newcomer, and contests must stay close. In races and
+    chases, use rubber banding that is felt: leaders ease off, the pack never
+    disappears out of reach.
+  - Keep the play area clear. HUD panels belong in thin strips at the edges;
+    show important state (boost, nitro, power-ups) on the player's own sprite
+    and with screen effects, not only in a panel. Check how much of each
+    screenshot the UI covers.
+  - Continuous synthesised sounds (engines, drones) easily sound harsh. Use a
+    sampled loop from an asset pack, or keep the synth soft, low and filtered,
+    and mix it well under effects and music.
+  - Full screen is expected. Make it real (native full screen or a
+    screen-sized window that actually fills the display), offer it in the
+    menus as well as on a key, and test the toggle.
+- Day 6 art feedback: sourcing a coherent third-party pack (Kenney) and
+  building the look around it worked - "graphics were nice". Keep doing it.
