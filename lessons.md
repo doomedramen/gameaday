@@ -121,3 +121,20 @@ delete lessons that still hold.
     only in a title-screen footer goes unnoticed.
 - Day 6 art feedback: sourcing a coherent third-party pack (Kenney) and
   building the look around it worked - "graphics were nice". Keep doing it.
+
+## Decisions, difficulty and busywork
+- Every manual action needs a meaningful timing choice, tradeoff or satisfying
+  skill payoff. If collecting a ready result is almost always correct, extra
+  clicks are chores. Waiting should have a clear accumulating benefit, ongoing
+  production, risk/reward or interaction; otherwise automate collection.
+  (day 7: manual harvesting felt pointless)
+- A numerical difficulty ramp and an idle-player loss do not prove challenge.
+  Compare competent, greedy and weak strategies; check whether ordinary
+  mistakes cost something and whether a better plan materially improves the
+  outcome. A bot winning every seed is a warning to investigate, not evidence
+  of good balance. Keep the opening approachable without making the entire
+  game trivial. (day 7: game far too easy)
+- Prove the repeated core decision is interesting before multiplying cards,
+  encounters, upgrades or menus. More systems and attractive presentation do
+  not rescue a boring loop; additional content can just prolong repetition.
+  (day 7: game boring)

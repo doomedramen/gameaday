@@ -1,5 +1,5 @@
 {
-  "day": 6,
+  "day": 7,
   "history": [
     {
       "date": "2026-10-20",
@@ -376,6 +376,85 @@
         "controls": "hard to tell when the speed boosts or nitros as the ui was always blocking a lot of the screen.",
         "gripe": "no full screen support; horrible engine sound; i did not notice the F key (didnt see it anywhere) and i was expecting to see the macos green maximise button but it was disabled.",
         "wish": "rubber banding so the AI can be caught; less screen covered by UI; full screen; a better engine sound"
+      }
+    },
+    {
+      "date": "2026-10-26",
+      "folder": "2026-10-26",
+      "title": "The Last Glasshouse",
+      "summary": "The Last Glasshouse - botanical deckbuilder with three persistent growing beds, manual harvests and adjacency bonuses, compost-to-action economy, 28 cards, drafts and grafting, 18 encounters, four seasonal rules, nine relics and three keepers; player found it boring and far too easy",
+      "model": "openai/gpt-6",
+      "tags": {
+        "genre": "deckbuilder",
+        "core_verb": "grow",
+        "perspective": "card-table",
+        "pacing": "turn-based",
+        "input": "mouse-only",
+        "structure": "run-based-roguelite",
+        "win_condition": "clear-board"
+      },
+      "capabilities": [
+        "core-loop",
+        "win-lose-states",
+        "health-lives-ui",
+        "title-screen",
+        "session-best-score",
+        "multiple-enemy-or-piece-types",
+        "boss-or-climax",
+        "difficulty-progression",
+        "pickups-or-powerups",
+        "combo-or-chain-scoring",
+        "particles-vfx",
+        "animated-sprites",
+        "parallax-or-layered-background",
+        "synth-audio-sfx",
+        "headless-selftest",
+        "screenshot-mode",
+        "persistent-save-file",
+        "in-run-upgrade-draft",
+        "route-choice",
+        "multiple-biomes",
+        "dynamic-lighting",
+        "adaptive-music",
+        "tutorial-onboarding",
+        "undo-move",
+        "threat-preview",
+        "autopilot-playtest",
+        "accessibility-assists",
+        "third-party-art-assets",
+        "deck-construction",
+        "plant-growth-harvest",
+        "card-compost-economy"
+      ],
+      "not_applicable": {
+        "procedural-level-generation": "The three-bed table is fixed. Seeded enemy rosters and card drafts do not constitute generated spatial levels.",
+        "tactical-ai-opponent": "Enemies use telegraphed conditional intention patterns and evaluate plant maturity; there is no positional tactical opponent or action-search AI.",
+        "broadcast-programming": "No broadcasts or radio station exist in this botanical deckbuilder.",
+        "power-grid-allocation": "There is no station power grid; actions pay for cards rather than operating a network.",
+        "persistent-campaign-upgrades": "Relics and grafts last one run. Between-session records and an alternate starting deck do not grant purchased campaign power.",
+        "community-trust-network": "There are no neighborhoods or community trust simulation.",
+        "rope-physics-traversal": "There is no spatial traversal or rope physics at this card table.",
+        "time-rewind": "There is no continuously advancing simulation to scrub. Decision undo stops at committed enemy turns.",
+        "time-trial-medals": "Untimed card decisions have no lap times, par times or time medals.",
+        "vehicle-drift-physics": "No vehicles or driving exist.",
+        "slipstream-drafting": "No vehicles, wakes or driving boosts exist.",
+        "ghost-replay": "There are no laps or movement trajectories to race against.",
+        "minimap": "All three beds and every enemy fit on screen; the itinerary is progression rather than a spatial minimap.",
+        "championship-standings": "This is a solo run with encounter progression, not a multi-competitor championship points table.",
+        "screen-shake-juice": "The shipped card-table renderer has particle bursts and messages but no camera shake, impact flash or knockback."
+      },
+      "firsts": [
+        "deck-construction",
+        "plant-growth-harvest",
+        "card-compost-economy"
+      ],
+      "feedback": {
+        "fun": "The game is boring.",
+        "visuals": "",
+        "replayability": "",
+        "controls": "",
+        "gripe": "the game is way too easy.\nseems silly for plants to require being clicked on to harvest if leaving them unharvested does nothing.",
+        "wish": ""
       }
     }
   ]

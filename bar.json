@@ -175,6 +175,18 @@
     "championship-standings": {
       "first_date": "2026-10-25",
       "description": "points table across a multi-event championship with qualifying targets"
+    },
+    "deck-construction": {
+      "first_date": "2026-10-26",
+      "description": "a shuffled draw/discard deck changes through reward drafts, permanent card removal and card graft upgrades within a run"
+    },
+    "plant-growth-harvest": {
+      "first_date": "2026-10-26",
+      "description": "persistent planted beds accumulate growth and convert mature harvests into combat effects, with adjacency pollination bonuses"
+    },
+    "card-compost-economy": {
+      "first_date": "2026-10-26",
+      "description": "once per turn, discard a hand card to gain an action, with seasonal growth interactions"
     }
   }
 }

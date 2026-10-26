@@ -1,0 +1,17 @@
+[package]
+name = "the-last-glasshouse"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+minifb = "0.28"
+cpal = "0.18"
+png = "0.18"
+ab_glyph = "0.2"
+resvg = { version = "0.45", default-features = false }
+
+[profile.dev]
+opt-level = 2
+
+[profile.release]
+debug = false
